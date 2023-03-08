@@ -1,0 +1,838 @@
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-primary: white;
+  --bg-secondary: black;
+  --bg-input: #f7f7f7;
+  --txt-primary: rgb(0, 0, 0);
+  --txt-secondary: white;
+  --brown: #fcaf58;
+  --outline: #ababab;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  font-size: 16px;
+}
+
+.container-section {
+  padding: 5em 8em;
+}
+
+.wrapper-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.wrap-title h1 {
+  font-size: 3.8vmax;
+  font-weight: var(--semibold);
+  margin-bottom: 0.4em;
+}
+
+.wrap-title p {
+  font-size: 1.25em;
+  max-width: 35vw;
+  font-weight: var(--regular);
+  margin-bottom: 0.75em;
+}
+
+.btn-install {
+  padding: 0.75em 2.75em;
+  font-size: 1.25rem;
+  font-weight: var(--medium);
+  background-color: var(--bg-secondary);
+  color: var(--txt-primary);
+  transition: all 0.3s ease-in;
+}
+
+a .btn-install:hover {
+  box-shadow: inset 0px 0px 0px 1px var(--bg-secondary);
+  background-color: var(--brown);
+  color: var(--txt-secondary);
+}
+
+.jumbotron {
+  width: 100vw;
+}
+
+.wrapper-second {
+  margin-top: 56px;
+  padding-left: 11em;
+  padding-right: 11em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app-logo {
+  width: 11vw;
+}
+
+.wrapper-third {
+  margin-top: 120px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.arrow {
+  width: 12vw;
+}
+
+.ill-deyah {
+  /* width: 32vw; */
+  width: 50%;
+  height: auto;
+  padding-right: 5em;
+}
+
+.header-section h1 {
+  font-size: 3vmax;
+  font-weight: var(--semibold);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.content-newchar {
+  display: flex;
+  justify-content: center;
+}
+
+.desc-newchar {
+  padding: 1em;
+  width: 35%;
+}
+
+.desc-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.desc-head .left-head h2 {
+  font-size: 2.5vmax;
+  font-weight: var(--medium);
+}
+
+.desc-head .left-head .star {
+  width: 10vw;
+}
+
+.desc-head .element {
+  width: 4vw;
+}
+
+.desc-newchar .underline {
+  width: 28vw;
+}
+
+.desc-newchar p {
+  font-size: 1.25vmax;
+  font-weight: var(--regular);
+  margin-bottom: 1em;
+}
+
+.desc-newchar button {
+  border: none;
+  background-color: var(--bg-secondary);
+  color: var(--txt-primary);
+  font-size: 1vmax;
+  font-weight: var(--medium);
+  padding: 1em 2em;
+  transition: all 0.3s ease-in;
+}
+.desc-newchar a button:hover {
+  background-color: var(--brown);
+  color: var(--txt-secondary);
+  box-shadow: inset 0px 0px 0px 1px var(--bg-secondary);
+}
+
+.wrapper-fourth {
+  margin-top: 120px;
+}
+
+.content-weapon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-weapon .content-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.content-weapon .content-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.content-weapon .desc {
+  padding: 3em 4em;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.content-weapon .desc h3 {
+  font-size: 2vmax;
+  font-weight: var(--medium);
+  margin-bottom: 0.25em;
+}
+
+.content-weapon .desc .star {
+  width: 10vw;
+  margin-bottom: 0.5em;
+}
+
+.content-weapon .desc p {
+  display: none;
+  font-size: 1vmax;
+  font-weight: var(--regular);
+}
+
+.content-weapon .weapon {
+  width: 15vw;
+}
+
+.content-weapon .desc:hover p {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    font-size: 14px;
+  }
+  .container-section {
+    padding: 6em 7em;
+  }
+  .wrap-title h1 {
+    font-size: 3vmax;
+    margin-bottom: 0.35em;
+  }
+
+  .wrap-title p {
+    font-size: 1em;
+    max-width: 30vw;
+    margin-bottom: 0.75em;
+  }
+
+  .btn-install {
+    padding: 0.75em 2.5em;
+    font-size: 1rem;
+  }
+
+  .jumbotron {
+    width: 50vw;
+  }
+
+  .wrapper-second {
+    padding-left: 9em;
+    padding-right: 9em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-logo {
+    width: 10vw;
+  }
+
+  .wrapper-third {
+    margin-top: 100px;
+  }
+
+  .content-newchar {
+    justify-content: center;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  .arrow {
+    width: 12vw;
+  }
+
+  .ill-deyah {
+    height: auto;
+    padding-right: 3em;
+  }
+
+  .header-section h1 {
+    font-size: 3vmax;
+  }
+
+  .content-newchar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desc-newchar {
+    padding: 1em;
+    width: 35%;
+  }
+
+  .desc-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3em;
+  }
+
+  .desc-head .left-head h2 {
+    font-size: 3vmax;
+  }
+
+  .desc-head .left-head .star {
+    width: 9.5vw;
+  }
+
+  .desc-head .element {
+    width: 3.5vw;
+  }
+  .desc-newchar .underline {
+    width: 26vw;
+  }
+
+  .desc-newchar p {
+    font-size: 1.25vmax;
+    margin-bottom: 1em;
+  }
+
+  .desc-newchar button {
+    font-size: 1vmax;
+    padding: 1em 2em;
+  } 
+  
+  .content-weapon .desc {
+    padding: 2em 3em;
+  }
+  
+  .content-weapon .desc h3 {
+    font-size: 2vmax;
+    margin-bottom: 0.25em;
+  }
+  
+  .content-weapon .desc .star {
+    width: 10vw;
+    margin-bottom: 0.5em;
+  }
+  
+  .content-weapon .weapon {
+    width: 15vw;
+  }
+
+    #wp2{
+    width: 20vw;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 13px;
+  }
+  .container-section {
+    padding: 5em 5.5em;
+  }
+  .wrap-title h1 {
+    font-size: 2.8vmax;
+    margin-bottom: 0.3em;
+  }
+
+  .wrap-title p {
+    font-size: 0.8rem;
+    max-width: 30vw;
+    margin-bottom: 0.75em;
+  }
+
+  .btn-install {
+    padding: 0.75em 2.5em;
+    font-size: 0.8rem;
+  }
+
+  .jumbotron {
+    width: 38vw;
+  }
+
+  .wrapper-second {
+    padding-left: 7em;
+    padding-right: 7em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .wrapper-third {
+    margin-top: 80px;
+  }
+  .content-newchar {
+    justify-content: space-between;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .arrow {
+    width: 12vw;
+  }
+
+  .ill-deyah {
+    height: auto;
+    padding-right: 0em;
+  }
+
+  .header-section h1 {
+    font-size: 2.5vmax;
+  }
+
+  .content-newchar {
+    justify-content: space-evenly;
+  }
+
+  .desc-newchar {
+    padding: 0.5em;
+    width: 37%;
+  }
+
+  .desc-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.05em;
+  }
+
+  .desc-head .left-head h2 {
+    font-size: 2.7vmax;
+  }
+
+  .desc-head .left-head .star {
+    width: 9.3vw;
+  }
+  .content-weapon .desc p {
+    display: block;
+  }
+
+  .desc-head .element {
+    width: 3.5vw;
+  }
+  .desc-newchar .underline {
+    width: 26vw;
+  }
+
+  .desc-newchar p {
+    font-size: 1.2vmax;
+    margin-bottom: 1em;
+  }
+
+  .desc-newchar button {
+    font-size: 1vmax;
+    padding: 0.9em 1.8em;
+  }
+
+  .content-weapon .desc {
+    padding: 1.5em 2.5em;
+  }
+  
+  .content-weapon .desc h3 {
+    font-size: 2vmax;
+    margin-bottom: 0.25em;
+  }
+  
+  .content-weapon .desc .star {
+    width: 10vw;
+    margin-bottom: 0.5em;
+  }
+  
+  .content-weapon .weapon {
+    width: 15vw;
+  }
+    #wp2{
+    width: 18vw;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+  .container-section {
+    padding: 4em 4.5em;
+  }
+  .wrap-title h1 {
+    font-size: 2.3vmax;
+    margin-bottom: 0.3em;
+  }
+
+  .wrap-title p {
+    font-size: 0.7rem;
+    max-width: 30vw;
+    margin-bottom: 0.75em;
+  }
+
+  .btn-install {
+    padding: 0.5em 2em;
+    font-size: 0.6rem;
+  }
+
+  .jumbotron {
+    width: 38vw;
+  }
+  .wrapper-second {
+    padding-left: 5em;
+    padding-right: 5em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .wrapper-third {
+    margin-top: 40px;
+  }
+
+  .content-newchar {
+    justify-content: space-between;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .arrow {
+    width: 12vw;
+  }
+
+  .ill-deyah {
+    height: auto;
+    padding-right: 0px;
+  }
+
+  .header-section h1 {
+    font-size: 2vmax;
+  }
+
+  .content-newchar {
+    justify-content: space-evenly;
+  }
+
+  .desc-newchar {
+    padding: 0.25em;
+    width: 37%;
+  }
+
+  .desc-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: none;
+  }
+
+  .desc-head .left-head h2 {
+    font-size: 2vmax;
+  }
+
+  .desc-head .left-head .star {
+    width: 9vw;
+  }
+
+  .desc-head .element {
+    width: 3.3vw;
+  }
+  .desc-newchar .underline {
+    width: 27vw;
+  }
+
+  .desc-newchar p {
+    font-size: 0.8vmax;
+    margin-bottom: 1.2em;
+  }
+
+  .desc-newchar button {
+    font-size: 0.8vmax;
+    padding: 0.9em 1.8em;
+  }
+
+  .content-weapon{
+    flex-direction: column;
+    height: 40vh;
+  }
+
+  .content-weapon .content-left {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .content-weapon .content-right {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+
+  .desc-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.05em;
+  }
+
+  .desc-head .left-head h2 {
+    font-size: 2.7vmax;
+  }
+
+  .desc-head .left-head .star {
+    width: 9.3vw;
+  }
+  .content-weapon .desc p {
+    display: block;
+  }
+
+  .desc-head .element {
+    width: 3.5vw;
+  }
+  .desc-newchar .underline {
+    width: 26vw;
+  }
+
+  .desc-newchar p {
+    font-size: 1.2vmax;
+    margin-bottom: 1em;
+  }
+
+  .desc-newchar button {
+    font-size: 1vmax;
+    padding: 0.9em 1.8em;
+  }
+
+  .content-weapon .desc {
+    width: 50%;
+    padding: 1.5em 2.5em;
+  }
+  
+  .content-weapon .desc h3 {
+    font-size: 2vmax;
+    margin-bottom: 0.25em;
+  }
+  
+  .content-weapon .desc .star {
+    width: 10vw;
+    margin-bottom: 0.5em;
+  }
+  
+  .content-weapon .weapon {
+    width: 10vw;
+  }
+    #wp2{
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+  .container-section {
+    padding: 3em 3.5em;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .wrap-title h1 {
+    font-size: 4vmax;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .wrap-title p {
+    font-size: 1rem;
+    max-width: none;
+    margin-bottom: 1.25em;
+    text-align: center;
+  }
+
+  .btn-install {
+    padding: 0.75em 2.5em;
+    font-size: 1rem;
+  }
+
+  .jumbotron {
+    display: none;
+  }
+  .wrapper-second {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .app-logo {
+    width: 15vw;
+  }
+
+  .wrapper-third {
+    margin-top: 40px;
+  }
+
+  .content-newchar {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .arrow {
+    width: 6vw;
+  }
+
+  .ill-deyah {
+    width: 80%;
+    height: auto;
+  }
+
+  .header-section h1 {
+    font-size: 2vmax;
+  }
+
+  .content-newchar {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .desc-newchar {
+    padding: 0.25em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desc-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: none;
+  }
+
+  .desc-head .left-head h2 {
+    font-size: 2.1vmax;
+  }
+
+  .desc-head .left-head .star {
+    width: 11vw;
+  }
+
+  .desc-head .element {
+    width: 3.5vw;
+  }
+  .desc-newchar .underline {
+    width: 65vw;
+  }
+
+  .desc-newchar p {
+    font-size: 1.2vmax;
+    margin-bottom: 1.2em;
+  }
+
+  .desc-newchar button {
+    font-size: 1.2vmax;
+    padding: 1em 2em;
+  }
+  .desc-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.05em;
+  }
+
+  .desc-head .left-head h2 {
+    font-size: 2.7vmax;
+  }
+
+  .desc-head .left-head .star {
+    width: 9.3vw;
+  }
+
+  .desc-head .element {
+    width: 3.5vw;
+  }
+  .desc-newchar .underline {
+    width: 26vw;
+  }
+
+  .desc-newchar p {
+    font-size: 1.2vmax;
+    margin-bottom: 1em;
+  }
+
+  .desc-newchar button {
+    font-size: 1vmax;
+    padding: 0.9em 1.8em;
+  }
+
+  .content-weapon .desc {
+    width: 80%;
+    padding: 1em 2em;
+  }
+  
+  .content-weapon .desc h3 {
+    font-size: 1.5vmax;
+    margin-bottom: 0.25em;
+  }
+
+  .desc-newchar p {
+    font-size: .8vmax;
+    margin-bottom: 1em;
+  }
+  
+  .content-weapon .desc .star {
+    width: 10vw;
+    margin-bottom: 0.5em;
+  }
+  
+  .content-weapon .weapon {
+    width: 14vw;
+  }
+    #wp2{
+    width: 17vw;
+  }
+}
