@@ -44,6 +44,7 @@ body {
   max-width: 17vh;
   height: auto;
   cursor: pointer;
+  margin-right: 5vw;
 }
 
 .menu {
@@ -153,6 +154,9 @@ a .button-reg:hover {
   .list a {
     width: 85%;
   }
+  .logo{
+    margin-right: 0em;
+  }
   .menu {
     margin: 0 .5em;
   }
@@ -164,6 +168,9 @@ a .button-reg:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .navbar{
+        padding: 1.5em 2em;
+    }
   .wrap-right {
     display: none;
   }
