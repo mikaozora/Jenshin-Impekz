@@ -1,0 +1,351 @@
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-primary: white;
+  --bg-secondary: black;
+  --bg-input: #f7f7f7;
+  --txt-primary: rgb(0, 0, 0);
+  --txt-secondary: white;
+  --brown: #fcaf58;
+  --outline: #ababab;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  font-size: 16px;
+}
+
+.container-section {
+  padding: 7em 5em 2em 5em;
+}
+
+.wrapper-jumbotron {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.bg-teyvat {
+  width: 100%;
+}
+
+.wrapper-jumbotron .desc-jumbotron {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  top: 25%;
+}
+
+.wrapper-jumbotron .desc-jumbotron h1 {
+  color: var(--txt-primary);
+  font-size: 4.7vw;
+  font-weight: var(--semibold);
+  margin-bottom: 1rem;
+}
+
+.wrapper-jumbotron .desc-jumbotron p {
+  color: var(--txt-primary);
+  font-size: 1.1vw;
+  font-weight: var(--medium);
+  text-align: center;
+}
+
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5em;
+  margin-top: 4em;
+}
+.arrow {
+  width: 12vw;
+}
+
+.header-section h1 {
+  font-size: 3vmax;
+  font-weight: var(--semibold);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.wrapper-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2.5em;
+}
+
+.wrapper-content .bg {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.overlay .logo-sm {
+  width: 22%;
+  height: auto;
+  margin-bottom: 1vw;
+}
+
+.overlay h3 {
+  font-size: 1.25vw;
+  font-weight: var(--medium);
+  color: var(--brown);
+  margin-bottom: 1vw;
+}
+
+.overlay p {
+  font-size: 1vw;
+  font-weight: var(--regular);
+  color: var(--txt-primary);
+  text-align: center;
+  flex: 1;
+}
+
+.overlay a .btn {
+  font-size: 1vw;
+  font-weight: var(--medium);
+  color: var(--txt-primary);
+  padding: 0.75vw 2vw;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 0px 0px 1px var(--bg-primary);
+  border: none;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.overlay a .btn:hover {
+  color: var(--txt-secondary);
+  background-color: var(--brown);
+  box-shadow: inset 0px 0px 0px 1px var(--bg-secondary);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-section {
+    padding: 7em 5em;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron h1 {
+    font-size: 4.7vw;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron p {
+    font-size: 1.1vw;
+  }
+  .overlay {
+    padding: 1em;
+  }
+
+  .overlay .logo-sm {
+    width: 22%;
+    height: auto;
+    margin-bottom: 1vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-section {
+    padding: 7em 4em 2em 4em;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron h1 {
+    font-size: 4.7vw;
+    margin-bottom: 0.7rem;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron p {
+    font-size: 1.1vw;
+  }
+
+  .wrapper-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 0em;
+    row-gap: 2em;
+  }
+
+  .wrapper-content .bg {
+    width: 100%;
+    height: 100%;
+  }
+  .overlay {
+    padding: 2em;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+  }
+
+  .overlay .logo-sm {
+    width: 30%;
+    height: auto;
+    margin-bottom: 1.5vw;
+  }
+
+  .overlay h3 {
+    font-size: 2vw;
+    font-weight: var(--medium);
+    color: var(--brown);
+    margin-bottom: 1.5vw;
+  }
+
+  .overlay p {
+    font-size: 1.5vw;
+    font-weight: var(--regular);
+    color: var(--txt-primary);
+    text-align: center;
+    flex: 1;
+  }
+
+  .overlay a .btn {
+    font-size: 1.5vw;
+    padding: 1vw 2.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-section {
+    padding: 6em 2em 1.5em 2em;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron h1 {
+    font-size: 5vw;
+    margin-bottom: 0.7rem;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron p {
+    font-size: 1.5vw;
+  }
+
+  .wrapper-content {
+    column-gap: 2em;
+  }
+
+  .overlay {
+    padding: 2em;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+  }
+
+  .overlay .logo-sm {
+    width: 30%;
+    height: auto;
+    margin-bottom: 1.5vw;
+  }
+
+  .overlay h3 {
+    font-size: 2.5vw;
+    font-weight: var(--medium);
+    color: var(--brown);
+    margin-bottom: 1.5vw;
+  }
+
+  .overlay p {
+    font-size: 1.8vw;
+    font-weight: var(--regular);
+    color: var(--txt-primary);
+    text-align: center;
+    flex: 1;
+  }
+
+  .overlay a .btn {
+    font-size: 1.8vw;
+    padding: 1vw 2.5vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+  .container-section {
+    padding: 5em 2em 1em 2em;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron {
+    width: 80%;
+  }
+
+  .bg-teyvat {
+    width: 110%;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron h1 {
+    font-size: 5.5vw;
+    margin-bottom: 0.2rem;
+  }
+
+  .wrapper-jumbotron .desc-jumbotron p {
+    font-size: 2vw;
+  }
+
+  .wrapper-content {
+    grid-template-columns: 1fr;
+    column-gap: 0em;
+  }
+
+  .overlay {
+    padding: 2em;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+  }
+
+  .overlay .logo-sm {
+    width: 30%;
+    height: auto;
+    margin-bottom: 3vw;
+  }
+
+  .overlay h3 {
+    font-size: 4vw;
+    font-weight: var(--medium);
+    color: var(--brown);
+    margin-bottom: 3vw;
+  }
+
+  .overlay p {
+    font-size: 3vw;
+    font-weight: var(--regular);
+    color: var(--txt-primary);
+    text-align: center;
+    flex: 1;
+    line-height: 1.5rem;
+  }
+
+  .overlay a .btn {
+    font-size: 3vw;
+    padding: 2vw 5vw;
+  }
+}
