@@ -7,10 +7,10 @@ const faces= document.querySelectorAll(".tabs-content .wrap-content .face-conten
 const contents = document.querySelectorAll(".tabs-content .wrap-content");
 // console.log(contents);
 
-const headContents = document.querySelectorAll(".wrap-left .wrap-head .head-content");
+const headContents = document.querySelectorAll(".wrap-left-char .wrap-head .head-content");
 // console.log(headContents);
 
-const charPicts = document.querySelectorAll(".wrap-right .char-pict");
+const charPicts = document.querySelectorAll(".wrap-right-char .char-pict");
 // console.log(charPicts);
 
 tabs.forEach((tab, index) => {
