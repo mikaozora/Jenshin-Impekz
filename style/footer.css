@@ -49,8 +49,8 @@ body {
 }
 
 .foot-left .socmed{
-    width: 2vw;
-    max-width: 2.5vw;
+    width: calc(1.5vw + 1em);
+    /* max-width: 2.5vw; */
     opacity: .7;
     transition: all .3s ease-in;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .footer-logo{
-    width: 16vw;
+    width: calc(10vw + 2em);
     max-width: 17vh;
 }
 
@@ -80,7 +80,11 @@ body {
         height: 20vh;
     }
     .foot-left{
-        width: 4em;
+        justify-content: center;
+    }
+
+    .foot-left .socmed{
+        margin: 0em calc(1vw + .5em);
     }
     
     

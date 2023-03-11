@@ -45,24 +45,30 @@
         </div>
         <div class="form-login">
           <p class="label">Name</p>
-          <input type="text" class="input" placeholder="Max. 25 characters" />
+          <input type="text" class="input" placeholder="Max. 25 characters" id="name" />
+          <div class="error" id="errName"></div>
           <p class="label">Email</p>
-          <input type="email" class="input" placeholder="example@gmail.com" />
+          <input type="email" class="input" placeholder="example@gmail.com" id="email" />
+          <div class="error" id="errEmail"></div>
           <p class="label">Password</p>
           <input
             type="password"
             class="input"
             placeholder="Min. 8 Characters"
+            id="password"
           />
+          <div class="error" id="errPassword"></div>
           <p class="label">Age</p>
-          <input type="number" class="input" placeholder="Min. 18 Years Old" />
+          <input type="number" class="input" placeholder="Min. 18 Years Old" id="age" />
+          <div class="error" id="errAge"></div>
           <div class="wrap-remember">
-            <input type="checkbox" id="check" />
+            <input type="checkbox" id="check"/>
             <label for="check" class="label-remember"
               >I Agree with User Agreement and Privacy Policy</label
             >
           </div>
-          <a href=""><button class="button-login">Create Account</button></a>
+          <div class="error" id="errAgree"></div>
+          <a href=""><button class="button-login" id="submit">Create Account</button></a>
           <p class="section-login">
             Already Have an account?
             <a href="login.html"><strong>Login</strong></a>
@@ -70,5 +76,6 @@
         </div>
       </div>
     </div>
+    <script src="script/register.js"></script>
   </body>
 </html>
