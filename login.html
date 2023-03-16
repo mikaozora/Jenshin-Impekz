@@ -45,18 +45,21 @@
         </div>
         <div class="form-login">
           <p class="label">Email</p>
-          <input type="email" class="input" placeholder="example@gmail.com" />
+          <input type="email" class="input" placeholder="example@gmail.com" id="email" />
+          <div class="error" id="errEmail"></div>
           <p class="label">Password</p>
           <input
             type="password"
             class="input"
             placeholder="Min. 8 Characters"
+            id="password"
           />
+          <div class="error" id="errPassword"></div>
           <div class="wrap-remember">
             <input type="checkbox" id="check" />
             <label for="check" class="label-remember">Remember Me</label>
           </div>
-          <a href="index.html"><button class="button-login">Login</button></a>
+          <a><button class="button-login" id="submit">Login</button></a>
           <p class="section-login">
             Don't Have an account?
             <a href="register.html"><strong>Create Account</strong></a>
@@ -64,5 +67,6 @@
         </div>
       </div>
     </div>
+    <script src="script/login.js"></script>
   </body>
 </html>
