@@ -28,14 +28,26 @@ buttonSubmit.addEventListener("click", (event) => {
     const passValue = inputPassword.value;
     const ageValue = inputAge.value;
     const agreeValue = inputAgreement.checked;
+    
 
     var result = 1;
+
+    divName.style.display = "none";
+    divEmail.style.display = "none";
+    divPassword.style.display = "none";
+    divAge.style.display = "none";
+    divAgree.style.display = "none";
+    inputName.style.border = "1px solid var(--outline)"
+    inputEmail.style.border = "1px solid var(--outline)"
+    inputPassword.style.border = "1px solid var(--outline)"
+    inputAge.style.border = "1px solid var(--outline)"
 
     if(nameValue == ""){
         result = 0;
         errName += "Name is Required"
         divName.innerHTML = errName;
         divName.style.display = "block";
+        inputName.style.border = "1px solid rgb(255, 86, 86)";
     }
     
 
@@ -44,6 +56,7 @@ buttonSubmit.addEventListener("click", (event) => {
         errEmail += "Please Input a valid email";
         divEmail.innerHTML = errEmail;
         divEmail.style.display = "block";
+        inputEmail.style.border = "1px solid rgb(255, 86, 86)";
     }
 
     if(passValue.length < 8){
@@ -51,6 +64,7 @@ buttonSubmit.addEventListener("click", (event) => {
         errPassword += "Minimum 8 characters";
         divPassword.innerHTML = errPassword;
         divPassword.style.display = "block";
+        inputPassword.style.border = "1px solid rgb(255, 86, 86)";
     }
 
     if(ageValue < 18){
@@ -58,6 +72,7 @@ buttonSubmit.addEventListener("click", (event) => {
         errAge += "Minimum age is 18 years old";
         divAge.innerHTML = errAge;
         divAge.style.display = "block";
+        inputAge.style.border = "1px solid rgb(255, 86, 86)";
     }
 
     if(!agreeValue){
