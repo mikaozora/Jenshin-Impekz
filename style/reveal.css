@@ -1,0 +1,11 @@
+.reveal{
+    position: relative;
+    transform: translateY(40%);
+    opacity: 0;
+    transition: all .8s ease-in;
+}
+
+.reveal.show{
+    transform: translateY(0%);
+    opacity: 1;
+}
